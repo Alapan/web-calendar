@@ -1,0 +1,32 @@
+{
+  "name": "web-calendar",
+  "version": "0.1.0",
+  "description": "Personal calendar application",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "npm run build",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --port 9080 --hot",
+    "build:prod": "webpack -p && cp src/index.html dist/index.html"
+  },
+  "keywords": [
+    "reactjs",
+    "es6",
+    "babel",
+    "webpack"
+  ],
+  "author": "Alapan Mukherjee",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "react-dom": "~15.3.2",
+    "react": "~15.3.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "~1.16.1",
+    "webpack": "~1.13.2",
+    "babel-core": "~6.16.0",
+    "babel-loader": "~6.2.5",
+    "babel-preset-es2015": "~6.16.0",
+    "babel-preset-react": "~6.16.0"
+  }
+}
