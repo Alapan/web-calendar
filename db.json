@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Customer meeting",
+      "start_date": "2016-01-01",
+      "end_date": "2016-01-01",
+      "start_time": "11:00",
+      "end_time": "15:00",
+      "description": "Discuss next work packages, deadlines, and budget for next year",
+      "type": "office"
+    },
+    {
+      "id": 2,
+      "name": "Visit dentist",
+      "start_date": "2016-01-01",
+      "end_date": "2016-01-01",
+      "start_time": "17:00",
+      "end_time": "",
+      "description": "",
+      "type": "healthcare"
+    },
+    {
+      "id": 3,
+      "name": "Call home",
+      "start_date": "2016-01-01",
+      "end_date": "2016-01-01",
+      "start_time": "21:00",
+      "end_time": "",
+      "description": "",
+      "type": "family"
+    },
+    {
+      "id": 4,
+      "name": "Drop kids to school",
+      "start_date": "2016-01-02",
+      "end_date": "2016-01-02",
+      "start_time": "09:00",
+      "end_time": "",
+      "description": "",
+      "type": "family"
+    }
+  ]
+}
