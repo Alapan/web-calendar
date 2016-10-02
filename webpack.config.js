@@ -13,8 +13,11 @@ var config = {
         // place to deploy the dist folder on public server
         publicPath: '/app/'
     },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
     // transpiling
-    modules: {
+    module: {
          loaders: [
              {
                  // test key tells webpack which files to look at regarding loader in source directory
