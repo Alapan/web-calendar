@@ -1,4 +1,5 @@
 import React from 'react';
+const $ = require('jquery');
 
 export default class EventList extends React.Component {
 
@@ -8,12 +9,13 @@ export default class EventList extends React.Component {
     }
 
     componentWillMount() {
-        const url = window.location.origin + '/events/'
+        const url = window.location.origin + '/events/';
         $.ajax({
             url,
             datatype: 'json',
             cache: false,
             success: (data) => {
+                console.log(data);
                 this.events = data;
             }
         });
