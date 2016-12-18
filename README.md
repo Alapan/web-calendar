@@ -12,3 +12,4 @@ Steps to run locally:
   1) git clone git@github.com:Alapan/web-calendar.git
   2) Terminal 1 - npm start
   3) Terminal 2 - webpack --watch
+  4) Run server - json-server --watch db.json
