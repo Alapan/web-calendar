@@ -34,7 +34,7 @@ export default class EventGrid extends React.Component {
     let month = '';
     let date = '';
 
-    // If start and end dates are the same,
+    // If start and end dates are the same
     if (startDate.getTime() === endDate.getTime()) {
       const d = new Date(startDate);
       day =  daysOfWeek[d.getDay()];
