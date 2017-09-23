@@ -7,11 +7,11 @@ require('../../../scss/container.scss');
 
 export default class Container extends React.Component {
   constructor() {
-  	super();
-  	this.state = {
-  	  displayType: '',
+    super();
+    this.state = {
+      displayType: '',
       events: ''
-  	};
+    };
   }
 
   componentWillMount() {
@@ -21,7 +21,7 @@ export default class Container extends React.Component {
   }
 
   renderDisplayTypeOptions() {
-  	return (
+    return (
       <div className="btn-group pull-right">
         <button
           type="button"
@@ -37,7 +37,7 @@ export default class Container extends React.Component {
           onClick={() => this.setState({ displayType: 'calendar'})}
         >Calendar</button>
       </div>
-  	);
+    );
   }
 
   render() {
@@ -53,13 +53,13 @@ export default class Container extends React.Component {
         display = <EventCalendar events={this.state.events}/>;
         break;
     }
-  	return (
-  	  <div>
-  	    <div className="well well-sm display-options-container">
-  	      { this.renderDisplayTypeOptions() }
-  	    </div>
+    return (
+      <div>
+        <div className="well well-sm display-options-container">
+          { this.renderDisplayTypeOptions() }
+        </div>
         {display}
       </div>
-  	);
+    );
   }
 }

@@ -16,9 +16,9 @@ const masonryOptions = {
 
 export default class EventGrid extends React.Component {
   renderGrid() {
-  	return (
+    return (
       this.props.events.map((item, i) => {
-    	  const eventDetailsUrl = `/event-details/?id=${i}`;
+        const eventDetailsUrl = `/event-details/?id=${i}`;
         return (
           <div className="grid-item" key={i}>
             <a href={eventDetailsUrl}>
@@ -32,11 +32,11 @@ export default class EventGrid extends React.Component {
           </div>
         )
       })
-  	);
+    );
   }
 
   render() {
-  	if (this.props.events) {
+    if (this.props.events) {
       return (
         <Masonry
           className={'grid'}
@@ -48,8 +48,8 @@ export default class EventGrid extends React.Component {
           {this.renderGrid()}
         </Masonry>
       )
-  	}
-  	return null;
+    }
+    return null;
   }
 }
 

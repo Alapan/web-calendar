@@ -14,15 +14,15 @@ export function getUrlParams(queryString) {
 }
 
 export function getDateObjectFromTime(time) {
-	const numbers = time.split(', ').map((n) => parseInt(n));
-	return new Date(
-		numbers[0],
-		numbers[1],
-		numbers[2],
-		numbers[3],
-		numbers[4],
-		numbers[5]
-	);
+  const numbers = time.split(', ').map((n) => parseInt(n));
+  return new Date(
+    numbers[0],
+    numbers[1],
+    numbers[2],
+    numbers[3],
+    numbers[4],
+    numbers[5]
+  );
 }
 
 export function showTimeInDayAndMonth(item) {

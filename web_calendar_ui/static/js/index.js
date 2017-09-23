@@ -4,6 +4,6 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
-    <Container />,
-    document.getElementById('eventList')
+  <Container />,
+  document.getElementById('eventList')
 );
