@@ -2,43 +2,51 @@
   "events": [
     {
       "id": 1,
-      "name": "Customer meeting",
-      "start_date": "2016-01-03",
-      "end_date": "2016-01-03",
-      "start_time": "11:00",
-      "end_time": "15:00",
-      "description": "Discuss next work packages, deadlines, and budget for next year",
-      "type": "office"
+      "title": "Cleaning",
+      "start": "2017, 8, 23, 14, 0, 0",
+      "end": "2017, 8, 23, 15, 0, 0",
+      "description": "",
+      "type": "home"
     },
     {
       "id": 2,
-      "name": "Visit dentist after work",
-      "start_date": "2016-01-01",
-      "end_date": "2016-01-01",
-      "start_time": "17:00",
-      "end_time": "",
+      "title": "Jogging",
+      "start": "2017, 8, 23, 22, 0, 0",
+      "end": "2017, 8, 23, 23, 0, 0",
       "description": "",
       "type": "healthcare"
     },
     {
       "id": 3,
-      "name": "Call home",
-      "start_date": "2016-01-10",
-      "end_date": "2016-01-10",
-      "start_time": "21:00",
-      "end_time": "23:00",
-      "description": "Inquire about mail",
-      "type": "family"
+      "title": "Laundry",
+      "start": "2017, 8, 23, 23, 0, 0",
+      "end": "2017, 8, 23, 23, 0, 0",
+      "description": "",
+      "type": "home"
     },
     {
       "id": 4,
-      "name": "Drop kids to school",
-      "start_date": "2016-01-02",
-      "end_date": "2016-01-02",
-      "start_time": "09:00",
-      "end_time": "",
+      "title": "Buy groceries",
+      "start": "2017, 8, 23, 11, 0, 0",
+      "end": "2017, 8, 23, 12, 0, 0",
       "description": "",
-      "type": "family"
+      "type": "home"
+    },
+    {
+      "id": 5,
+      "title": "Swimming class",
+      "start": "2017, 8, 21, 19, 5, 0",
+      "end": "2017, 8, 21, 19, 50, 0",
+      "description": "",
+      "type": "sports"
+    },
+    {
+      "id": 6,
+      "title": "Visit bank",
+      "start": "2017, 8, 20, 12, 0, 0",
+      "end": "2017, 8, 20, 13, 0, 0",
+      "description": "",
+      "type": "home"
     }
   ]
 }

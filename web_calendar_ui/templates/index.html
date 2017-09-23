@@ -2,18 +2,19 @@
 {% load render_bundle from webpack_loader %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Web calendar</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Web calendar</h1>
-            <div id="search"></div>
-            <div id="eventList"></div>
-        </div>
-        <script src="{% static 'build/js/vendor.js' %}"></script>
-        <script src="{% static 'build/js/index.js' %}"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'build/css/react-big-calendar.css' %}">
+    <title>Web calendar</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Web calendar</h1>
+      <div id="search"></div>
+      <div id="eventList"></div>
+    </div>
+    <script src="{% static 'build/js/vendor.js' %}"></script>
+    <script src="{% static 'build/js/index.js' %}"></script>
+  </body>
 </html>

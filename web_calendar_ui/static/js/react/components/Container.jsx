@@ -1,20 +1,29 @@
 import React from 'react';
 import EventList from './EventList.jsx';
 import EventGrid from './EventGrid.jsx';
+import EventCalendar from './EventCalendar.jsx';
+const $ = require('jquery');
 require('../../../scss/container.scss');
 
 export default class Container extends React.Component {
   constructor() {
   	super();
   	this.state = {
-  	  displayType: ''
+  	  displayType: '',
+      events: ''
   	};
+  }
+
+  componentWillMount() {
+    $.get('http://localhost:3000/events', (events) => {
+      this.setState({ events });
+    })
   }
 
   renderDisplayTypeOptions() {
   	return (
       <div className="btn-group pull-right">
-        <button 
+        <button
           type="button"
           className="btn btn-default"
           onClick={() => this.setState({ displayType: 'grid'})}
@@ -35,13 +44,14 @@ export default class Container extends React.Component {
     let display = '';
     switch(this.state.displayType) {
       case 'grid':
-        display = <EventGrid />;
+        display = <EventGrid events={this.state.events}/>;
         break;
       case 'list':
-        display = <EventList />;
+        display = <EventList events={this.state.events}/>;
         break;
       default:
-        display = <EventGrid />;
+        display = <EventCalendar events={this.state.events}/>;
+        break;
     }
   	return (
   	  <div>
